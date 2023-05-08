@@ -58,6 +58,7 @@ ul,ol{
 .wrap{
 	max-width:1000px;
 	margin:0 auto;
+	z-index: 1;
 }
 .wrap .bar{
 	width:1000px;
@@ -66,23 +67,27 @@ ul,ol{
 	display:flex;
 	flex-direction: row;
 	justify-content: flex-end;
+	z-index: 50;
 }
 .wrap .bar img {
 	align-items: center;
-	width: 16px;
-	height: 16px;
-	margin-top: 5px;
-	padding-bottom: 5px;
-	margin-left: 5px;
+	width: 20px;
+	height: 20px;
+	margin-top: 2.5px;
+}
+.wrap .bar span{
+	padding-top: 2.5px;
+	padding-right: 5px;
 }
 .wrap .bar span a{
 	text-decoration: none;
-	margin-left: 3px;
-	font-size: 16px;
-	padding-top:3px;
-
+	margin-left: 5px;
+	font-size: 18px;
+	color:#01013a
 }
-
+.bar span a:hover{
+   color:#01fe66;
+}
  .wrap .box {
 	display: flex;
 	align-items: center;
@@ -113,15 +118,15 @@ ul,ol{
 	font-size: 30px;
 }
 .wrap .box .smallBox {
-	margin-left: 340px;
-	margin-bottom: 60px;
+	margin-left: 330px;
+	margin-bottom: 0px;
 	background-color: transparent;
 	height: 0;
 	width: 0;
-	border-top: 200px solid rgba(33, 16, 85, 0.2);
-	border-right: 200px solid rgba(33, 0, 85, 0.2);
-	border-bottom: 200px solid transparent;
-	border-left: 200px solid transparent;
+	border-top: 171px solid rgba(33, 16, 85, 0.2);
+	border-right: 171px solid rgba(33, 0, 85, 0.2);
+	border-bottom: 171px solid transparent;
+	border-left: 171px solid transparent;
 	z-index: 100;
 }
  .menuBar {
@@ -190,7 +195,7 @@ ul,ol{
 }
 .container .mainMenu{
 	width:190px;
-	height:auto;
+	height:654.5px;
 	float:left;
 	margin:0;
 	background-color: #dbeffc;
